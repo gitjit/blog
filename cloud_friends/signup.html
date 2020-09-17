@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cognito-Auth</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Cognito-Auth</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li> 
+            <li><a onclick="signOut()" href="#" class="user"><i class="fa fa-user" aria-hidden="true"></i></i></a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center">
+            <h2>Sign Up</h2>
+            <form class="signup-container">
+                <div class="signup-item">
+                    <label class="sign-lbl" for="username">Username:</label>
+                    <input class="sign-inp" id="username" type="text" />
+                </div>
+                <div class="signup-item">
+                    <label class="sign-lbl" for="username">Email:</label>
+                    <input class="sign-inp" id="email" type="email" />
+                </div>
+                <div class="signup-item">
+                    <label class="sign-lbl" for="password">Password:</label>
+                    <input class="sign-inp" id="password" type="password" />
+                </div>
+                <button class="btn" onclick="signUp()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/amazon-cognito-identity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="./js/apiGateway-js-sdk/apigClient.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
