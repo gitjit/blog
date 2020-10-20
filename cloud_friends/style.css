@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(120deg, #f6d365, #d88771);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+}
+
+.logo {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  background: rgb(226, 226, 226);
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  /* .nav-links li{
+      opacity: 0;
+  } */
+  .burger {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+
+
+.mid-box {
+  width: 50%;
+  background-color: #5d4954;
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  color: rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+h2,
+p {
+  text-align: center;
+}
+
+.login-btns {
+  align-self: center;
+}
+.hide {
+  display: none;
+}
+.signup-container {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #6e4e60;
+}
+.signup-item {
+  justify-content: space-around;
+  align-self: center;
+  display: flex;
+  margin: 3px;
+}
+.sign-inp {
+  width: 70%;
+  flex: 1;
+}
+.sign-lbl {
+  text-align: center;
+  margin-right: 5px;
+  padding: 3px;
+  width: 100px;
+}
+
+.conv{
+  background: beige;
+  margin: 5px;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: black 2px solid;
+  border-radius: 3px;
+}
+.conv-text{
+  flex: 1;
+  color: blueviolet;
+}
+.conv-btn{
+  padding: 3px;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+}
+
+.center{
+  width: 500px;
+	height: 150px;
+  background-color: #6e4e60;
+  color: rgb(226, 226, 226);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.vflex{
+  display: flex;
+  flex-direction:column;
+  justify-items: center;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+  background: lightgreen;
+  border-radius: 5px;
+  border-color: lightblue;
+}
+
+.time{
+  align-self:flex-end;
+  font-style: italic;
+  color: dimgrey;
+  margin-right: 10px;
+  font-size: x-small;
+}
+.message-container{
+  display: flex;
+  overflow-y: auto;
+  height: 60vh;
+  flex-direction: column;
+  border: black 2px dotted;
+
+}
+.message{
+  background: beige;
+  margin: 15px;
+  border:  blue 2px solid;
+  border-radius: 5px;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message p {
+  margin: 10px;
+}
+
+.sender{
+  align-self: start;
+  clear: both;
+  font-weight: bolder;
+  color: red;
+}
+
+.msg-text{
+  align-self: center;
+}
+.left{
+  align-self: start;
+}
+
+.right{
+  align-self: flex-end;
+} 
+
+.msg-form{
+  margin: 10px;
+  text-align: center;
+}
+.msg-input{
+  width: 80%;
+  height: 35px;
+  padding: 5px;
+}

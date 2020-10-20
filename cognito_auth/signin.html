@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cognito-Auth</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Cognito-Auth</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li> 
+            <li><a onclick="signOut()" href="#" class="user"><i class="fa fa-user" aria-hidden="true"></i></i></a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center">
+            <h2>Sign In</h2>
+            <form class="signup-container">
+                <div class="signup-item">
+                    <label class="sign-lbl" for="username">Username:</label>
+                    <input class="sign-inp" id="username" type="text" />
+                </div>
+                <div class="signup-item">
+                    <label class="sign-lbl" for="password">Password:</label>
+                    <input class="sign-inp" id="password" type="password" />
+                </div>
+                <button class="btn" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="amazon-cognito-identity.min.js"></script>
+    <script src="app.js"></script>
+    </script>
+</body>
+
+</html>

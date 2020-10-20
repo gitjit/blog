@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body >
+    <nav>
+        <div class="logo">
+            <h4>Cognito-Auth</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html"><i class="fas fa-home">Home</i></a></li>
+            <li><a href="#" class="user"><i class="fa fa-user" aria-hidden="true"></i></i></a></li>
+        </ul>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- <div class="mid-box">
+            <h2>Welcome to Dynamo Chat</h2>
+            <p>
+               This is simple chat application to experiment with AWS features like Dynamo Db and Cognito. 
+               If you are here for the first time please sign up else login. 
+            </p>
+         
+            <div class="login-btns">
+                <button class="btn left" onclick="navTosignIn()">Start</button>
+                <button class="btn right" onclick="navTosignUp()">Register</button>
+            </div>
+        </div> -->
+        <div class="center">
+            <div class="vflex">
+                <h2>Welcome to My App</h2>
+                <p>
+                    This is simple  application to experiment with AWS Cognito.  
+                 </p>
+                 <div class="login-btns">
+                    <button class="btn left" onclick="navTosignIn()">Start</button>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="amazon-cognito-identity.min.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        checkLogin();
+    </script>
+</body>
+
+</html>
