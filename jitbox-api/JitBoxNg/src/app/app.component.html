@@ -1,0 +1,14 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="row">
+        <div class="col text-center">
+          <!-- <h4 *ngIf="city !== ''">City : {{city}}</h4> -->
+          <button class="btn btn-success mt-5"  (click)="onApiCall()">Get Temperature</button>
+          <div *ngIf= "temp !== ''">
+            <h4>City        : {{city}}</h4>
+            <h4>Temperature : {{temp}}</h4>
+            <h4>Summary     : {{summary}}</h4>
+          </div>
+        </div>
+      </div>
+</div>
